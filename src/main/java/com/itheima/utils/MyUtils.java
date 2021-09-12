@@ -47,7 +47,6 @@ public class MyUtils {
                 .attributeProviderFactory(context -> new LinkAttributeProvider())
                 .extensions(extensions).build();
         String content = renderer.render(document);
-        content = Commons.emoji(content);
         return content;
     }
 
